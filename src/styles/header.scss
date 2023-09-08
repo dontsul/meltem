@@ -1,0 +1,249 @@
+.header {
+  background-color: #fff;
+
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 0 0;
+    position: relative;
+  }
+
+  &__logo {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo img {
+    width: 91px;
+    height: 18px;
+  }
+
+  &__nav {
+    order: 3;
+    grid-column: span 2;
+    display: none;
+
+    &__list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      padding: 71px 0;
+
+      &__item {
+      }
+      &__item a {
+        color: var(--text);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__wrap-btns {
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &__btn {
+      border: 1.5px solid var(--primary-color);
+      border-radius: 4px;
+      padding: 6.5px 17.5px;
+      cursor: pointer;
+
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    &__burger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 15px;
+      margin-right: 6px;
+      cursor: pointer;
+      background-image: url("../images/burger-btn.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__burger.active-menu {
+      cursor: pointer;
+      background-image: url("../images/burger-close.svg");
+      width: 30px;
+      height: 25px;
+    }
+  }
+
+  &__phone {
+    display: none;
+    order: 4;
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 71px;
+
+    color: var(--text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__language {
+    display: none;
+    order: 5;
+    grid-column: span 2;
+    justify-self: center;
+
+    align-items: center;
+
+    &__btn {
+      color: var(--primary-color);
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__btn.active-language {
+      border-radius: 2px;
+      background: var(--primary-color);
+      color: #fff;
+    }
+  }
+}
+
+.active-header-menu {
+  position: fixed;
+}
+
+.active {
+  display: flex;
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    // background-color: #fff;
+
+    // position: static;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-template-columns: auto 1fr auto auto auto;
+      padding: 30px 0 0 0;
+      position: relative;
+      //   justify-content: last baseline;
+    }
+
+    &__logo {
+      order: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__logo img {
+      width: 146px;
+      height: 30px;
+    }
+
+    &__nav {
+      order: 2;
+      grid-column: span 1;
+      display: block;
+      justify-self: center;
+
+      &__list {
+        flex-direction: row;
+        gap: 2.5vw;
+        padding: 0;
+
+        &__item {
+        }
+        &__item a {
+          color: var(--text);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+
+    &__wrap-btns {
+      order: 4;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-right: 3vw;
+
+      &__btn {
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        padding: 13px 29px;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      &__burger {
+        display: none;
+      }
+    }
+
+    &__phone {
+      display: block;
+      order: 3;
+      grid-column: span 1;
+      margin-bottom: 0;
+      font-size: 16px;
+      letter-spacing: 0.16px;
+      margin-right: 3vw;
+    }
+
+    &__language {
+      display: flex;
+      order: 5;
+      grid-column: span 1;
+
+      &__btn {
+        border-radius: 3px;
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+      }
+      &__btn.active-language {
+        background: var(--primary-color);
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="/">
+            <img
+              class="header__logo__img"
+              src="./images/meltem-logo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav__list">
+              <li class="header__nav__list__item">
+                <a href="#">Компанія</a>
+              </li>
+              <li class="header__nav__list__item">
+                <a href="#">Продукція</a>
+              </li>
+              <li class="header__nav__list__item">
+                <a href="#">Статті</a>
+              </li>
+              <li class="header__nav__list__item">
+                <a href="#">Рішення</a>
+              </li>
+              <li class="header__nav__list__item">
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrap-btns">
+            <button class="header__wrap-btns__btn">Зв’язатись</button>
+            <button class="header__wrap-btns__burger">
+              <!-- <img src="./images/burger-btn.svg" alt="" /> -->
+            </button>
+          </div>
+          <a class="header__phone" href="tel:380800000000">0 (800) 00-00-00</a>
+          <div class="header__language">
+            <button
+              data-language="ua"
+              class="header__language__btn active-language"
+            >
+              UA
+            </button>
+            <button data-language="ru" class="header__language__btn">RU</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="wrapper-slider">
+        <!-- <swiper-container
+          speed="500"
+          loop="true"
+          a11y
+          autoplay
+          class="swiper-container"
+        >
+          <swiper-slide>
+            <div class="slide">
+              <div class="container">
+                <div class="slide__wrapper">
+                  <div class="slide__info">
+                    <h1 class="slide__info__title">Meltem</h1>
+                    <p class="slide__info__text">
+                      Meltem – це гарантовано якісне вентиляційне обладнання від
+                      німецького заводу.
+                    </p>
+                    <button class="slide__info__btn">Продукція</button>
+                  </div>
+                  <div class="slide__content">
+                    <picture class="slide__content__picture">
+                      <source
+                        srcset="./images/slider/first-slide-lg.png"
+                        type="image/png"
+                        media="(min-width: 992px)"
+                      />
+
+                      <img
+                        decoding="async"
+                        class="slide__content__image"
+                        src="./images/slider/first-slide-sm.png"
+                        alt="slide"
+                      />
+                    </picture>
+                    <div class="slide__content__about">
+                      <h6 class="slide__content__title">
+                        Відцентровий витяжний вентилятор
+                      </h6>
+                      <p class="slide__content__descr">Meltem V-II 30-N</p>
+                      <div class="slide__content__wrap-btn">
+                        <button class="slide__content__btn">Детальніше</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide">
+              <div class="container">
+                <div class="slide__wrapper">
+                  <div class="slide__info">
+                    <h1 class="slide__info__title">Meltem</h1>
+                    <p class="slide__info__text">
+                      Meltem – це гарантовано якісне вентиляційне обладнання від
+                      німецького заводу.
+                    </p>
+                    <button class="slide__info__btn">Продукція</button>
+                  </div>
+                  <div class="slide__content">
+                    <picture class="slide__content__picture">
+                      <source
+                        srcset="./images/slider/second-slide-lg.png"
+                        type="image/png"
+                        media="(min-width: 992px)"
+                      />
+
+                      <img
+                        decoding="async"
+                        class="slide__content__image"
+                        src="./images/slider/second-slide-sm.png"
+                        alt="slide"
+                      />
+                    </picture>
+                    <div class="slide__content__about">
+                      <h6 class="slide__content__title">
+                        Відцентровий витяжний вентилятор
+                      </h6>
+                      <p class="slide__content__descr">Meltem V-II 30-N</p>
+                      <div class="slide__content__wrap-btn">
+                        <button class="slide__content__btn">Детальніше</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide">
+              <div class="container">
+                <div class="slide__wrapper">
+                  <div class="slide__info">
+                    <h1 class="slide__info__title">Meltem</h1>
+                    <p class="slide__info__text">
+                      Meltem – це гарантовано якісне вентиляційне обладнання від
+                      німецького заводу.
+                    </p>
+                    <button class="slide__info__btn">Продукція</button>
+                  </div>
+                  <div class="slide__content">
+                    <picture class="slide__content__picture">
+                      <source
+                        srcset="./images/slider/third-slide-lg.png"
+                        type="image/png"
+                        media="(min-width: 992px)"
+                      />
+
+                      <img
+                        decoding="async"
+                        class="slide__content__image"
+                        src="./images/slider/third-slide-sm.png"
+                        alt="slide"
+                      />
+                    </picture>
+                    <div class="slide__content__about">
+                      <h6 class="slide__content__title">
+                        Відцентровий витяжний вентилятор
+                      </h6>
+                      <p class="slide__content__descr">Meltem V-II 30-N</p>
+                      <div class="slide__content__wrap-btn">
+                        <button class="slide__content__btn">Детальніше</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container> -->
+        <!-- <div class="pagination"></div> -->
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="container">
+                  <div class="slide__wrapper">
+                    <div class="slide__info">
+                      <h1 class="slide__info__title">Meltem</h1>
+                      <p class="slide__info__text">
+                        Meltem – це гарантовано якісне вентиляційне обладнання
+                        від німецького заводу.
+                      </p>
+                      <button class="slide__info__btn">Продукція</button>
+                    </div>
+                    <div class="slide__content">
+                      <picture class="slide__content__picture">
+                        <source
+                          srcset="./images/slider/first-slide-lg.png"
+                          type="image/png"
+                          media="(min-width: 992px)"
+                        />
+
+                        <img
+                          decoding="async"
+                          class="slide__content__image"
+                          src="./images/slider/first-slide-sm.png"
+                          alt="slide"
+                        />
+                      </picture>
+                      <div class="slide__content__about">
+                        <h6 class="slide__content__title">
+                          Відцентровий витяжний вентилятор
+                        </h6>
+                        <p class="slide__content__descr">Meltem V-II 30-N</p>
+                        <div class="slide__content__wrap-btn">
+                          <button class="slide__content__btn">
+                            Детальніше
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="container">
+                  <div class="slide__wrapper">
+                    <div class="slide__info">
+                      <h1 class="slide__info__title">Meltem</h1>
+                      <p class="slide__info__text">
+                        Meltem – це гарантовано якісне вентиляційне обладнання
+                        від німецького заводу.
+                      </p>
+                      <button class="slide__info__btn">Продукція</button>
+                    </div>
+                    <div class="slide__content">
+                      <picture class="slide__content__picture">
+                        <source
+                          srcset="./images/slider/second-slide-lg.png"
+                          type="image/png"
+                          media="(min-width: 992px)"
+                        />
+
+                        <img
+                          decoding="async"
+                          class="slide__content__image"
+                          src="./images/slider/second-slide-sm.png"
+                          alt="slide"
+                        />
+                      </picture>
+                      <div class="slide__content__about">
+                        <h6 class="slide__content__title">
+                          Відцентровий витяжний вентилятор
+                        </h6>
+                        <p class="slide__content__descr">Meltem V-II 30-N</p>
+                        <div class="slide__content__wrap-btn">
+                          <button class="slide__content__btn">
+                            Детальніше
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="container">
+                  <div class="slide__wrapper">
+                    <div class="slide__info">
+                      <h1 class="slide__info__title">Meltem</h1>
+                      <p class="slide__info__text">
+                        Meltem – це гарантовано якісне вентиляційне обладнання
+                        від німецького заводу.
+                      </p>
+                      <button class="slide__info__btn">Продукція</button>
+                    </div>
+                    <div class="slide__content">
+                      <picture class="slide__content__picture">
+                        <source
+                          srcset="./images/slider/third-slide-lg.png"
+                          type="image/png"
+                          media="(min-width: 992px)"
+                        />
+
+                        <img
+                          decoding="async"
+                          class="slide__content__image"
+                          src="./images/slider/third-slide-sm.png"
+                          alt="slide"
+                        />
+                      </picture>
+                      <div class="slide__content__about">
+                        <h6 class="slide__content__title">
+                          Відцентровий витяжний вентилятор
+                        </h6>
+                        <p class="slide__content__descr">Meltem V-II 30-N</p>
+                        <div class="slide__content__wrap-btn">
+                          <button class="slide__content__btn">
+                            Детальніше
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap-pagination">
+            <div class="pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="modal">
+      <div class="modal__window">
+        <div class="modal__action">
+          <h2 class="modal__action__title">Залишайте заявку</h2>
+          <p class="modal__action__text">
+            Ми зв’яжемося з вами найближчим часом.
+          </p>
+          <form class="modal__action__form" action="" id="form">
+            <div class="modal__action__form__wrap-input">
+              <input
+                class="modal__action__form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше ім’я*"
+              />
+            </div>
+            <div class="modal__action__form__wrap-input phone">
+              <img src="./images/ua.svg" alt="ua" />
+              <input
+                class="modal__action__form__input"
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="+380-00-000-00-00*"
+              />
+            </div>
+            <button class="modal__action__form__btn" type="submit">
+              Відправить
+            </button>
+            <p class="modal__action__form__consent">
+              Натискаючи кнопку “Надіслати”, ви погоджуєтесь з
+              <a class="modal__action__form__consent__link" href="#"
+                >Правилами обробки персональних даних.</a
+              >
+            </p>
+          </form>
+          <button class="modal__action__close-btn"></button>
+        </div>
+        <div class="modal__success hide">
+          <img
+            class="modal__success__img"
+            src="./images/quality.svg"
+            alt="quality"
+          />
+          <h4 class="modal__success__title">Дякуємо за заявку!</h4>
+          <p class="modal__success__text">Ваші дані успішно надіслані!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cookies hide-cookies">
+      <p class="modal-cookies__text">
+        Використовуючи цей сайт, ви даєте згоду на роботу з файлами
+        <a href="">cookies</a>.
+      </p>
+      <button id="cookies-btn" class="modal-cookies__btn">Згоден</button>
+    </div>
+  </body>
+</html>
